@@ -5,7 +5,6 @@
                 data.AccountCode = x.AccountCode;
                 data.AccountTitle = x.AccountTitle;
                 $('.QuickSearchResults').hide();
-                // $scope.validateGrid(indx, true);
             }
             var _InstrumentIndex = -1;
             $scope.GetSelectedInstrumentName = function(x) {
