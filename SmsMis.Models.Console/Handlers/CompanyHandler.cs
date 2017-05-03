@@ -349,7 +349,4 @@ namespace SmsMis.Models.Console
             }
         }
     }
-
-    public class TEST123
-    { }
 }
