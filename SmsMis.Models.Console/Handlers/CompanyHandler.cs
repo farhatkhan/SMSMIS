@@ -350,6 +350,6 @@ namespace SmsMis.Models.Console
         }
     }
 
-    public class TEST12
+    public class TEST123
     { }
 }
