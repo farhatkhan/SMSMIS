@@ -103,6 +103,7 @@
     <Compile Include="Models\ClientContext.cs" />
     <Compile Include="Models\COAGroup.cs" />
     <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\ConfigurationContext.cs" />
     <Compile Include="Models\CostCenter.cs" />
     <Compile Include="Models\CostCenterBranch.cs" />
     <Compile Include="Models\Course.cs" />

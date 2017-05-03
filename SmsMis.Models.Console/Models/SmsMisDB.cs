@@ -1,3 +1,5 @@
+using System.Data.Entity.Migrations;
+using SmsMis.Models.Console.Models;
 using SmsMis.Models.Console.Models.SmsMis.Models.Console.Admin;
 
 namespace SmsMis.Models.Console.Handlers.Admin
@@ -11,8 +13,7 @@ namespace SmsMis.Models.Console.Handlers.Admin
 
     public class SmsMisDB : DbContext//TrackerContext
     {
-        public SmsMisDB()
-            : base("name=SmsMisEntities")
+        public SmsMisDB(): base("name=SmsMisEntities")
         {
             Database.SetInitializer<SmsMisDB>(new CreateDatabaseIfNotExists<SmsMisDB>());
         }
@@ -167,6 +168,7 @@ namespace SmsMis.Models.Console.Handlers.Admin
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<SmsMisDB,Configuration>());
             //modelBuilder.Entity<VoucherDetail>()
             //        .HasRequired<VoucherMaster>(s => s.VoucherMaster) // Student entity requires Standard 
             //        .WithMany(s => s.VoucherDetail);
@@ -178,6 +180,6 @@ namespace SmsMis.Models.Console.Handlers.Admin
             //    .Property(e => e.adminPassword)
             //    .IsUnicode(false);
             //modelBuilder.Entity<comBranch>();
-        }
-    }
+        }        
+    }   
 }
