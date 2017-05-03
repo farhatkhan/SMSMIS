@@ -45,7 +45,7 @@ namespace SmsMis.Models.Console
         {
             //Get the connection 
             SqlConnection con = GetConnection(SQL_CONN_STRING);
-         
+
             try
             {
                 if (objCompany != null)
@@ -216,7 +216,7 @@ namespace SmsMis.Models.Console
         {
             int iCompanyCode = 0;
             SqlParameter[] aParms = GetParameters(objCompany);
-            SetParameters(aParms, objCompany, ref iCompanyCode,"");
+            SetParameters(aParms, objCompany, ref iCompanyCode, "");
             using (SqlConnection conn = GetConnection(SQL_CONN_STRING))
             {
                 using (SqlTransaction trans = conn.BeginTransaction())
@@ -248,29 +248,29 @@ namespace SmsMis.Models.Console
                 //Represents a parameter to a System.Data.SqlClient.SqlCommand, 
                 //and optionally, its mapping to System.Data.DataSet columns. 
                 objParamArray = new SqlParameter[]
-			{
-				new SqlParameter(PARAM_CompanyCode, objCompany.CompanyCode),
-				new SqlParameter(PARAM_CompanyName, objCompany.CompanyName),
-				new SqlParameter(PARAM_ShortName, objCompany.ShortName),
-				new SqlParameter(PARAM_Salogan, objCompany.Salogan),
-				new SqlParameter(PARAM_ContactPerson, objCompany.ContactPerson),
-				new SqlParameter(PARAM_Address, objCompany.Address),
-				new SqlParameter(PARAM_Phone1, objCompany.Phone1),
-				new SqlParameter(PARAM_Phone2, objCompany.Phone2),
-				new SqlParameter(PARAM_Phone3, objCompany.Phone3),
-				new SqlParameter(PARAM_Phone4, objCompany.Phone4),
-				new SqlParameter(PARAM_Fax1, objCompany.Fax1),
-				new SqlParameter(PARAM_Fax2, objCompany.Fax2),
-				new SqlParameter(PARAM_URL, objCompany.URL),
-				new SqlParameter(PARAM_Eamil1, objCompany.Eamil1),
-				new SqlParameter(PARAM_Email2, objCompany.Email2),
-				new SqlParameter(PARAM_STRNo, objCompany.STRNo),
-				new SqlParameter(PARAM_NTN, objCompany.NTN),
-				new SqlParameter(PARAM_LogoPath, objCompany.LogoPath),
-				new SqlParameter(PARAM_Status, objCompany.Status),
-				new SqlParameter(PARAM_AddByUserId, objCompany.AddByUserId),
-				new SqlParameter(PARAM_AddDateTime, objCompany.AddDateTime),
-			};
+            {
+                new SqlParameter(PARAM_CompanyCode, objCompany.CompanyCode),
+                new SqlParameter(PARAM_CompanyName, objCompany.CompanyName),
+                new SqlParameter(PARAM_ShortName, objCompany.ShortName),
+                new SqlParameter(PARAM_Salogan, objCompany.Salogan),
+                new SqlParameter(PARAM_ContactPerson, objCompany.ContactPerson),
+                new SqlParameter(PARAM_Address, objCompany.Address),
+                new SqlParameter(PARAM_Phone1, objCompany.Phone1),
+                new SqlParameter(PARAM_Phone2, objCompany.Phone2),
+                new SqlParameter(PARAM_Phone3, objCompany.Phone3),
+                new SqlParameter(PARAM_Phone4, objCompany.Phone4),
+                new SqlParameter(PARAM_Fax1, objCompany.Fax1),
+                new SqlParameter(PARAM_Fax2, objCompany.Fax2),
+                new SqlParameter(PARAM_URL, objCompany.URL),
+                new SqlParameter(PARAM_Eamil1, objCompany.Eamil1),
+                new SqlParameter(PARAM_Email2, objCompany.Email2),
+                new SqlParameter(PARAM_STRNo, objCompany.STRNo),
+                new SqlParameter(PARAM_NTN, objCompany.NTN),
+                new SqlParameter(PARAM_LogoPath, objCompany.LogoPath),
+                new SqlParameter(PARAM_Status, objCompany.Status),
+                new SqlParameter(PARAM_AddByUserId, objCompany.AddByUserId),
+                new SqlParameter(PARAM_AddDateTime, objCompany.AddDateTime),
+            };
                 SqlHelperParameterCache.CacheParameterSet(SQL_CONN_STRING, SQL_INSERT_Company, objParamArray);
             }
             return objParamArray;
@@ -349,4 +349,7 @@ namespace SmsMis.Models.Console
             }
         }
     }
+
+    public class TEST
+    { }
 }
