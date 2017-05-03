@@ -130,6 +130,9 @@ namespace SmsMis.Models.Console.Handlers.Admin
                 throw ex;
             }
         }
+
+        public void test()
+        { }
         //public comBranch SelectByID(System.Guid BranchID)
         //{
         //    comBranch branch = new SGIValencyDB().comBranchList.Find(BranchID);
