@@ -8,12 +8,12 @@ using SmsMis.Models.Console.Handlers.Admin;
 
 namespace SmsMis.Models.Console.Models
 {
-    public class Configuration : DbMigrationsConfiguration<SmsMisDB>
-    {
-        public Configuration()
-        {
-            AutomaticMigrationsEnabled = true;
-            AutomaticMigrationDataLossAllowed = true;
-        }
-    }
+    //public class Configuration : DbMigrationsConfiguration<SmsMisDB>
+    //{
+    //    public Configuration()
+    //    {
+    //        AutomaticMigrationsEnabled = true;
+    //        AutomaticMigrationDataLossAllowed = true;
+    //    }
+    //}
 }

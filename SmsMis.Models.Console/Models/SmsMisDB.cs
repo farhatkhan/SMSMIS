@@ -168,7 +168,7 @@ namespace SmsMis.Models.Console.Handlers.Admin
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<SmsMisDB,Configuration>());
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<SmsMisDB,Configuration>());
             //modelBuilder.Entity<VoucherDetail>()
             //        .HasRequired<VoucherMaster>(s => s.VoucherMaster) // Student entity requires Standard 
             //        .WithMany(s => s.VoucherDetail);
