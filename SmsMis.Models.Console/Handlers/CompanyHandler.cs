@@ -1,4 +1,4 @@
-using Microsoft.ApplicationBlocks.Data;
+//using Microsoft.ApplicationBlocks.Data;
 using SmsMis.Models.Console.Handlers.Admin;
 using SmsMis.Models.Console.Common;
 using System;
@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using SmsMis.Models.Console.Common;
 using System.IO;
 using System.Drawing;
+using Microsoft.ApplicationBlocks.Data;
 
 namespace SmsMis.Models.Console
 {

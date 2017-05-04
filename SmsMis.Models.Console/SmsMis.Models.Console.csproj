@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationBlock\SqlHelper.cs" />
     <Compile Include="Handlers\hdlAnalysisType.cs" />
     <Compile Include="Handlers\hdlParty.cs" />
     <Compile Include="Handlers\hdlCOAGroup.cs" />

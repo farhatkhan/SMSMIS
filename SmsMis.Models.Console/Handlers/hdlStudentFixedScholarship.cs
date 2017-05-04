@@ -7,9 +7,10 @@ using System.Data.Entity;
 using SmsMis.Models.Console.Client;
 using SmsMis.Models.Console.Handlers.Admin;
 using SmsMis.Models.Console.Common;
-using Microsoft.ApplicationBlocks.Data;
+//using Microsoft.ApplicationBlocks.Data;
 using System.Data.SqlClient;
 using System.Data;
+using Microsoft.ApplicationBlocks.Data;
 
 namespace SmsMis.Models.Console.Handlers.Fee
 {

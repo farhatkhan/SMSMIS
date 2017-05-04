@@ -8,9 +8,11 @@ using SmsMis.Models.Console.Common;
 using SmsMis.Models.Console.Client;
 using SmsMis.Models.Console.Handlers.Admin;
 using System.Data;
-using Microsoft.ApplicationBlocks.Data;
+//using Microsoft.ApplicationBlocks.Data;
 using System.Data.SqlClient;
 using SmsMis.Models.Console.Admin;
+using Microsoft.ApplicationBlocks.Data;
+
 
 namespace SmsMis.Models.Console.Handlers
 {
@@ -437,7 +439,6 @@ namespace SmsMis.Models.Console.Handlers
         {
             SmsMis.Models.Console.Handlers.Admin.SmsMisDB db = new SmsMis.Models.Console.Handlers.Admin.SmsMisDB();
             return db.Session.Where(s => s.Status == true && s.CompanyCode == companyid).ToList();
-        }
-        
+        }        
     }
 }
